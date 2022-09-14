@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+/*
+Colores
+  Tarjetas
+    Red: hsl(0, 78%, 62%)
+    Cyan: hsl(180, 62%, 55%)
+    Orange: hsl(34, 97%, 64%)
+    Blue: hsl(212, 86%, 64%)
+  Sombra
+    Dark Blue: hsl(240, 25%, 50%) al 20% de opacidad;
+  Texto
+    Grey: hsl(229, 6%, 66%)
+  Fondo de la tarjeta y del background
+    White: hsl(0, 0%, 93%)
+
+Fuente de la página
+  https://fonts.google.com/specimen/Poppins
+  Estilos 200, 400 y 600
+*/
+body {
+  background-color: hsl(0, 0%, 93%);
+  font-family: "Poppins", sans-serif;
+  font-size: 400;
+  text-align: center;
+}
+
+.main-title {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.title-thin {
+  font-weight: 200;
+}
+
+.title-bold {
+  font-weight: 600;
+}
+
+.subtitulo {
+  width: 540px;
+  margin: 1.3rem auto 0;
+}
+
+.text--light {
+  color: hsl(229, 6%, 66%);
+}
+
+.cards {
+  position: relative;
+  width: 1200px;
+  height: 550px;
+  margin: 5rem auto;
+}
+.card {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  text-align: start;
+  font-size: 0.9rem;
+  border-radius: 1rem;
+  box-shadow: 5px 10px 10px hsl(240 25% 50% / 0.2);
+  padding: 0 0 2rem 1.5rem;
+}
+
+.card__title,
+.card__text {
+  text-align: start;
+}
+
+.card__title {
+  font-size: 1.5rem;
+}
+
+.card__icon {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+.card--left,
+.card--right {
+  top: 150px;
+}
+
+.card--top,
+.card--bottom {
+  left: 425px;
+}
+
+.card--cyan {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.card--red {
+   border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.card--orange {
+  bottom: 0;
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.card--blue {
+  right: 0;
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
